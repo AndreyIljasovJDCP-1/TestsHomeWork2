@@ -13,7 +13,7 @@ class FinancesTest {
 
 
     @Test
-    @DisplayName("Тест: Платеж=0, если взнос больше суммы покупки")
+    @DisplayName("Тест: Платеж=0, если взнос >= сумма покупки")
     void calcPaymentReturnZero() {
         Assertions.assertEquals(0, Finances.calcMonthlyPayment(1000, 5000, 1));
     }
